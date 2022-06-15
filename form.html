@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 사용자로부터 입력을 받을때 사용할 수 있는 태그 -->
+    <form action="test.html"> 
+        <input type="button" value="button"> <!--일반버튼 js로 처리-->
+        <input type="reset" value="reset"> <!--입력값을 초기화-->
+        <input type="submit" value="submit"> <!--form 태그의 액션 정보를 서버로 전달-->
+    
+    </form><br/>
+    <form action="test.html">
+        <button type="button"> button</button> <!--일반버튼 js로 처리-->
+        <button type="reset"> reset</button> <!--입력값을 초기화-->
+        <button type="submit"> submit</button><!--form 태그의 액션 정보를 서버로 전달-->
+    </form><br/>
+    <br/>
+    <br/>
+
+    <!-- 요청방식 -->
+    <!-- get(공개) - 서버로 전달하는 값이 주소창에 나타남(길이제한O), post(비공개) - 서버로 전달하는 값이 숨겨지면 길이제한이 없다 -->
+
+
+    <!-- get방식 -->
+    <form action="test.html" method="get">
+        <input type="text" name="a1" value="aaaa"><br/> <!--a1 = query-->
+        <input type="text" name="a2" value="bbbb"><br/>
+        <input type="submit" name="submit"><br/>
+        <input type="reset" name="reset"><br/>        
+    </form>
+    <hr/>
+
+    <form action="test.html" method="post"> <!--post방식 숨김-->
+        <input type="text" name="a3" value="aaaa" readonly="readonly"><br/> 
+        <input type="text" name="a4" value="bbbb" disabled="'disabled"><br/>
+        <input type="submit" name="submit"><br/>
+        <input type="reset" name="reset"><br/>        
+    </form>
+    <hr/>
+
+    <form action="test.html" method="get">
+        <input type="text" name="a5" value="aaaa" size="20"><br/> <!--a1 = query-->
+        <input type="text" name="a6" value="bbbb" style="width: 200px;"><br/>
+        <input type="submit" name="submit"><br/>
+        <input type="reset" name="reset"><br/>        
+    </form>
+    <hr/>
+
+    <form action="test.html" method="get">
+        <input type="text" name="a7" value="" maxlength="5"><br/> <!--a1 = query-->
+        <input type="text" name="a8" value="" minlength="5"><br/>
+        <input type="text" name="a9" value="" autocomplete="on"><br/>
+        <input type="submit" name="submit"><br/>
+        <input type="reset" name="reset"><br/>        
+    </form>
+    <hr/>
+
+    <form action="test.html" method="get">
+        <input type="text" name="a9" value="" autofocus="autofocus"><br/> <!--a1 = query-->
+        <input type="text" name="a10" name="" placeholder="숫자를 입력하시오"><br/>
+        <input type="text" name="a10" name="" required="required"><br/>
+        <input type="submit" name="submit"><br/>    
+    </form>
+    <hr/>
+
+
+    
+</body>
+</html>
