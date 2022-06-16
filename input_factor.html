@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 요소</title>
+</head>
+<body>
+    <!-- text 한줄짜리 문자열 입력요소 -->
+    
+    <form action="test.html" method="get">
+        <input type="text" name="a1"><br/> <!--default value = 'text'-->
+        <button type="submit">button</button>
+    </form>
+
+
+    <!-- password -->
+    <form action="test.html" method="get">
+        <input type="password" name="a2"><br/> <!--비밀번호 만들때 사용-->
+        <button type="submit">button</button>
+    </form>
+
+    <!--textarea, 여러줄 문자열 입력-->
+    <form action="test.html" method="get">
+        <input type="text" name="a3"><br/>
+        <textarea name="a3" id="" cols="30" rows="5" style="resize:none"></textarea><br/>
+        <textarea name="a4" style="width: 200px; height: 50px;"></textarea><br/>
+        <button type="submit">button</button>
+    </form>
+    <hr/>
+
+
+
+    <!-- check box -->
+    <fieldset style="width:200px;"> <!--그룹화-->
+        <legend>체크박스</legend> <!--레젠드입력 -->
+    <input type="checkbox" name="a1" value="1" checked="checked"> <!--  <-- 기본체크--> 체크박스 1 <br/>
+    <input type="checkbox" name="a2" value="2"> 체크박스 2 <br/>
+    <input type="checkbox" name="a3" value="3"> 체크박스 3 <br/>
+    <button type="submit"> button </button>
+    </fieldset> <br/>
+
+    <input type="checkbox" name="a4" value="4"> 체크박스 4 <br/>
+
+    <!-- radio -->
+    <fieldset style="width:200px;"> <!--그룹화-->
+        <legend> 라디오 버튼</legend> <!--레젠드입력 -->
+    <input type="radio" name="a1" value="1" checked="checked"> <!--  <-- 기본체크--> 라디오 버튼 1 <br/>
+    <input type="radio" name="a1" value="2"> 라디오 버튼 2 <br/>
+    <input type="radio" name="a1" value="3"> 라디오 버튼 3 <br/>
+    <button type="submit"> button </button>
+    </fieldset> <br/>
+
+    <!-- select 단일선택 -->
+    <select name="a1">
+        <option value="1"> 항목 1 </option>
+        <option value="2"> 항목 2 </option>
+        <option value="3" selected="selected"> 항목 3 </option>
+        <option value="4"> 항목 4 </option>
+        <option value="5"> 항목 5 </option>
+    </select>
+
+    <hr/>
+    
+    <!-- select 다중선택 multiple-->
+    <select name="a1" multiple="multiple">
+        <option value="1"> 항목 1 </option>
+        <option value="2"> 항목 2 </option>
+        <option value="3" selected="selected"> 항목 3 </option>
+        <option value="4"> 항목 4 </option>
+        <option value="5" selected="selected"> 항목 5 </option>
+    </select>
+
+    <hr/>
+
+    <!-- file -->
+    <input type="file" name="a1"><br/><br/>
+
+
+    <!-- hidden 숨김-->
+    <input type="hidden" name="a2" value="aaaa"> <br/><br/>
+
+
+    <!-- search 검색 x버튼 활성화-->
+    <input type="search" name="a1"><br/><br/>
+
+
+    <hr/>
+
+    <!-- number 숫자 입력-->
+    <form action="test.html">
+    <input type="number" name="a1" max="100" min="0" step="5"><br/><br/>
+    <button type="submit">확인</button>
+    </form>
+
+
+    <br/>
+    <br/>
+
+    <!-- range -->
+    <input type="range" name="a1" max="100" min="0">
+
+
+    <br/>
+    <br/>
+
+    <!-- e-mail -->
+    <form action="test.html">
+    <input type="email" name="a1"> <br/>
+    <button type="submit"> 이메일 확인</button>
+    </form>
+    <br/><br/>
+
+
+    <!--url -->
+    <form action="test.html">
+        <input type="url" name="a1"> <br/>
+        <button type="submit"> url 확인</button>
+        </form>
+
+    <br/><br/>
+
+    <!-- 날짜와 시간 -->
+    <form action="test.html">
+        <input type="datetime-local" name="a1"> <br/>
+        <input type="date" name="a1"> <br/>
+        <input type="month" name="a1"> <br/>
+        <input type="week" name="a1"> <br/>
+        <input type="time" name="a1"> <br/>
+        <button type="submit"> 확인</button>
+        </form>
+    <br/><br/>
+
+        <!--color-->
+        <input type="color" name="a1"> <br/>
+    <br/><br/>
+
+    <!-- tel -->
+    <form action="test.html">
+
+        <input type="tel" name="a1"> <br/>
+        </form>
+
+
+
+</body>
+</html>
