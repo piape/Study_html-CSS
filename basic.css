@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+.c1{
+    color: rgb(163, 207, 32); 
+    background-color: rgb(21, 18, 80);
+    font-size: 40;
+    font-weight: bold;
+}
+.c2{
+    color :rgb(21, 18, 80);
+    background-color: brown;
+    font-style: italic;
+
+}
+
